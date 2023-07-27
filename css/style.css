@@ -1,0 +1,17 @@
+/* global */
+@import url("./global/global.css");
+
+/* Cabeçalho */
+@import url("./header/header.css");
+
+/* Utilidades */
+@import url("./utilidades/componentes.css");
+@import url("./utilidades/tipografia.css");
+@import url("./utilidades/cores.css");
+
+/* experiência */
+@import url("./experiência/experiencia.css");
+
+/* Formação */
+@import url("./formação/formacao.css");
+@import url("./formação/curso.css");

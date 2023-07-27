@@ -1,0 +1,65 @@
+.formacao-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 100px 0;
+  gap: 40px;
+}
+.formacao-escolaridade h3 {
+  max-width: 40ch;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+.formacao-academicas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.formacao-academica {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 4px;
+}
+.formacao-academica:not(:first-child, :last-child) {
+  margin: 0 20px;
+}
+.formacao-academica {
+  position: relative;
+}
+.formacao-academica span,
+h4,
+p {
+  margin-bottom: 20px;
+}
+.formacao-academica span {
+  text-transform: uppercase;
+}
+.formacao-academica h4 {
+  flex: 1;
+}
+.formacao-academica:hover {
+  background: var(--cor-p4);
+}
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 0;
+  }
+  .formacao-container h2 {
+    padding-top: 20px;
+    color: var(--cor-1);
+  }
+}
+@media (max-width: 600px) {
+  .formacao-academicas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .formacao-academica:last-child {
+    margin-top: 20px;
+    grid-column: 1/-1;
+    text-align: center;
+  }
+  .formacao-escolaridade h3 {
+    align-items: center;
+  }
+}
