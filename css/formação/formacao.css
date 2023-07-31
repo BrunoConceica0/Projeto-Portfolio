@@ -1,4 +1,10 @@
 .formacao-container {
+  position: relative;
+}
+.formacao-container h2 {
+  max-width: 4ch;
+}
+.formacao-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 100px 0;
@@ -39,15 +45,31 @@ p {
 .formacao-academica:hover {
   background: var(--cor-p4);
 }
+.formacao-container::before {
+  content: "";
+  display: block;
+  background: url("../../img/detalhe.svg");
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  bottom: -64px;
+}
 @media (max-width: 800px) {
+  .formacao-bg {
+    padding-bottom: 20px;
+  }
   .formacao-container {
     grid-template-columns: 1fr;
     padding: 20px;
     gap: 0;
   }
   .formacao-container h2 {
+    max-width: initial;
     padding-top: 20px;
     color: var(--cor-1);
+  }
+  .formacao-container::before {
+    display: none;
   }
 }
 @media (max-width: 600px) {

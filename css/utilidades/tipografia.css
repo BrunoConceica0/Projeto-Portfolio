@@ -1,6 +1,9 @@
 .font-2-p {
   font: 300 0.952rem/1.5 "roboto", sans-serif;
 }
+.font-1-pb {
+  font:700 0.852rem/1.5 "roboto", sans-serif;
+}
 .font-1-m {
   font: 300 1.125rem/1.35 "roboto", sans-serif;
 }

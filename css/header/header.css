@@ -37,15 +37,22 @@
     background-size: 22%;
   }
 }
-.introducao-titulo p{
+.introducao-titulo p {
   padding-top: 10px;
 }
 @media (max-width: 600px) {
   .head-menu li {
-    margin: 5px;
+    margin: 10px;
     padding: 8px 12px;
   }
-  .introducao-titulo{
+  .head-menu ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .introducao-titulo {
     place-self: center;
   }
   .head {

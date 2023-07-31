@@ -12,30 +12,30 @@
 </head>
 
 <body>
-  <main>
-    <header class="head container ">
-      <img src="./img/marca.svg" alt="Marca" width="104" height="38">
+  <main id="header">
+    <header class="head container" >
+      <img class="fadeInRight" src="./img/marca.svg" alt="Marca" width="104" height="38" data-anime="100">
       <nav class="  head-menu" aria-label="Primário">
-        <ul class="font-1-m">
+        <ul class="font-1-m fadeInLeft" data-anime="100">
           <li><a href="#experiencia">Experiêcia</a></li>
-          <li><a href="#Formação">Formação</a></li>
-          <li><a href="./">Contato</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href=".#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
-    <article class="introducao container">
-      <div class="introducao-img">
-        <img src="./img/perfil.jpg" alt="Foto de perfil " width="720" height="1040">
+    <article class="introducao container fadeInLeft">
+      <div class="introducao-img ">
+        <img class="fadeInRight" src="./img/perfil.jpg" alt="Foto de perfil " width="720" height="1040" data-anime="400">
       </div>
-      <div class="introducao-titulo">
+      <div class="introducao-titulo fadeInLeft" data-anime="400">
         <h1 class="font-1-gg-b">Desenvolvedor <br> Front End & <br> UX/UI Designer</h1>
         <p class="font-1-m2 cor-7">Localizado em São Paulo</p>
       </div>
     </article>
   </main>
-  <article aria-labelledby="Experiêcia" class="experiencia container" id="experiencia">
+  <article aria-labelledby="Experiêcia" class="experiencia container fadeInUp " id="experiencia" data-anime="1000">
     <h2 class="font-2-ggx-b cor-4 subtiulo" id="Experiêcia"> experiência</h2>
-    <section class="experiencia-container">
+    <section class="experiencia-container container">
       <p class="font-1-m3 cor-9 ">Desenvolvo pequenos projetos como o Bikcraft utilizando apenas <strong>HTML, CSS</strong> e <strong>JavaScript</strong>. Para aplicativos web como a rede social Dogs eu trabalhei no <strong>UX</strong> e <strong>UI</strong> Design do projeto.</p>
       <div class="experiencia-projetos sombra">
         <div>
@@ -87,7 +87,7 @@
       </div>
     </section>
   </article>
-  <article aria-labelledby="Formação" class="formacao-bg cor-bg-11" id="Formação">
+  <article aria-labelledby="formacao" class="formacao-bg cor-bg-11" id="formacao">
     <div class="formacao-container container">
       <h2 class="font-2-ggx-b subtiulo">formação</h2>
       <section class="formacao-escolaridade ">
@@ -111,11 +111,46 @@
             <p class="font-2-p cor-6">UCLL</p>
           </div>
         </section>
-      
+        <section class="formacao-cursos">
+          <div class="formacao-cursos-intesivos">
+            <h3 class="font-1-pb cor-7">cursos intensivos</h3>
+            <ul>
+              <li class="font-1-m cor-1">UX Design & UI Design</li>
+              <li class="font-1-m cor-7">56h</li>
+            </ul>
+            <ul>
+              <li class="font-1-m cor-1">front End para Iniciantes</li>
+              <li class="font-1-m cor-7">72h</li>
+            </ul>
+          </div>
+          <div class="formacao-idiomas">
+            <h3 class="font-1-pb cor-7">Idioma</h3>
+            <ul>
+              <li class="font-1-m cor-1">Inglês <span class="cor-7">/ Fluente</span></li>
+              <li class="font-1-m cor-1">Espanhol <span class="cor-7">/ Intermediário</span></li>
+            </ul>
+          </div>
+        </section>
       </section>
-
     </div>
   </article>
+  <footer class="rodape-bg " id="contato">
+    <section class="rodade-container container">
+      <div class="contatos">
+        <h3 class="font-1-m2 cor-3">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</h3>
+        <ul class="font-1-m3 ">
+          <li><a href="mailto:lobo@email.com">lobo@email.com</a></li>
+          <li><a href="tel:+55 21 9999-9999
+          ">+55 21 9999-9999
+            </a></li>
+          <li><a href="https://www.instagram.com">@instagram</a></li>
+        </ul>
+      </div>
+    </section>
+    <p class="copyright font-1-m cor-6 container">Lobo. Alguns direitos reservados.</p>
+  </footer>
+  <script src="./javascript/plugin/simple-anime.js"></script>
+  <script src="./javascript/script.js"></script>
 </body>
 
 </html>

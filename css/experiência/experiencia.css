@@ -61,7 +61,7 @@
 }
 @media (max-width: 600px) {
   .experiencia{
-    padding: 20px 0;
+    padding-bottom: 20px;
   }
   .experiencia-projetos {
     grid-template-columns: 1fr;

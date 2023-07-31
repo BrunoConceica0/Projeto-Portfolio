@@ -1,0 +1,41 @@
+.formacao-idiomas h3{
+  position: relative;
+}
+.formacao-cursos h3 {
+  text-transform: uppercase;
+  margin-top: 60px;
+  position: relative;
+}
+.formacao-cursos-intesivos ul {
+  display: flex;
+  justify-content: space-between;
+}
+.formacao-cursos-intesivos h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../../img/cursos.svg") no-repeat;
+  position: absolute;
+  left: -30px;
+  top: -4px;
+}
+.formacao-idiomas h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../../img/idiomas.svg") no-repeat;
+  position: absolute;
+  left: -30px;
+  top: -4px;
+}
+
+@media(max-width:800px){
+  .formacao-cursos-intesivos h3::before, .formacao-idiomas h3::before{
+    position: initial;
+  }
+  .formacao-cursos h3{
+    margin:40px 0;
+  }
+}

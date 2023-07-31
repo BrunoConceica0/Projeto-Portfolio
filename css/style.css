@@ -8,6 +8,7 @@
 @import url("./utilidades/componentes.css");
 @import url("./utilidades/tipografia.css");
 @import url("./utilidades/cores.css");
+@import url("./utilidades/animacao.css");
 
 /* experiência */
 @import url("./experiência/experiencia.css");
@@ -15,3 +16,7 @@
 /* Formação */
 @import url("./formação/formacao.css");
 @import url("./formação/curso.css");
+
+/* Rodapé */
+@import url("./rodape/rodape.css");
+
